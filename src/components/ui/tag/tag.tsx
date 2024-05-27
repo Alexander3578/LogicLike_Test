@@ -4,11 +4,11 @@ import {Typography} from '@/components/ui/typography';
 
 export type TagProps = {
     children: ReactNode
-    className?: string
+    currentTag: boolean
 }
 
-export const Tag = memo(({children, className}:TagProps) => {
- return <div className={`${s.tag} ${className}`}>
+export const Tag = memo(({children, currentTag}:TagProps) => {
+ return <div className={`${s.tag} ${currentTag && s.selectedTag}`}>
      <Typography as={'div'} className={s.tagsText}>
          {children}
      </Typography>

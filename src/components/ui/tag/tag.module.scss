@@ -9,6 +9,12 @@
   }
 }
 
+.selectedTag {
+  background-color: var(--color-primary);
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
 .tagsText {
   padding: 12px;
   transition: ease-in-out 0.1s;

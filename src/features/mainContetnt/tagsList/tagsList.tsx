@@ -38,7 +38,7 @@ export const TagsList = memo(({onChangeCourses, tagsTheme}:TagsListProps) => {
         <ul className={s.tagsList}>
             {tagItems.map(item =>
                 <li key={item.id} onClick={() => onChangeCourses(item.title as Tags)}>
-                    <Tag className={tagsTheme === item.title ? s.selectedTag : ''}>
+                    <Tag currentTag={tagsTheme === item.title}>
                         {item.title}
                     </Tag>
                 </li>

@@ -5,7 +5,7 @@ import {memo} from 'react';
 type CourseProps = {
     img: string,
     text: string
-    bgColor: string
+    bgColor?: string
 }
 
 export const Course = memo((props: CourseProps) => {
